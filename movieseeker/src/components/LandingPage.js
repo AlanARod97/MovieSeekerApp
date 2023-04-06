@@ -1,8 +1,11 @@
 import MoviesGrid from './MoviesGrid';
-
+import Search from './Search';
 
 export default function LandingPage(){
     return (
-        <MoviesGrid/>
+        <div>
+            <Search/>
+            <MoviesGrid/>
+        </div>
     )
 }
