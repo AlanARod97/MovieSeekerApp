@@ -26,7 +26,11 @@ export default function Search (){
                 <input 
                 className={Styles.searchInput} 
                 type="text" value={searchText} 
-                onChange={(e)=> setSearchText(e.target.value)}  
+                onChange={(e)=> {
+                    const value = e.target.value;
+                     setSearchText(value);
+                     navigate("/?search=" + value);
+                }}  
                 />
                 <button className={Styles.searchButton} type="submit">
                     <FaSearch size={20} />
