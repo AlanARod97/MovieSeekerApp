@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import get from '../utils/httpClient';
 import Spinner from './Spinner';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import { Empty } from './Empty';
 
 
 export default function MoviesGrid({search}) {
@@ -25,6 +26,10 @@ export default function MoviesGrid({search}) {
             setIsLoading(false);
         })
     }, [search, page]);
+
+    if (!isLoading && movies.length === 0) {
+        return <Empty />;
+    }
 
     return (
         <InfiniteScroll dataLength={movies.length} 

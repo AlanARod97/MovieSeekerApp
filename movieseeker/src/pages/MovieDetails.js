@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Styles from './MovieDetails.module.css';
 import get from '../utils/httpClient';
 import Spinner from '../components/Spinner';
-
+import placeholder from '../placeholder.png';
 
 export default function MovieDetails(){
 
@@ -30,7 +30,7 @@ export default function MovieDetails(){
     return null;
   }
 
-  const imageUrl = "https://image.tmdb.org/t/p/w500" + movie.poster_path;
+  const imageUrl = movie.poster_path ?"https://image.tmdb.org/t/p/w500" + movie.poster_path : placeholder;
     return (
     <div className={Styles.detailsContainer}>
       <img className={`${Styles.col} ${Styles.movieImage}`} src={imageUrl} alt=""/>
