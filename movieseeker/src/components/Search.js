@@ -24,6 +24,7 @@ export default function Search (){
                 className={Styles.searchInput} 
                 type="text" value={search} 
                 placeholder='Title'
+                aria-label='Search'
                 onChange={(e)=> {
                     const value = e.target.value;
                     
