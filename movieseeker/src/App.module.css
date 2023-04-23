@@ -1,5 +1,6 @@
 .title{
     text-align: center;
+    margin-top: 5rem;
     font-size: 3rem;
     text-shadow: 0 0 10px #fff, 0 0 20px #e60073, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073; 
     transition: 0.5s;
