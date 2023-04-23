@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MovieSeekerApp/static/css/main.2381cc7d.css",
+    "main.js": "/MovieSeekerApp/static/js/main.ac3aa545.js",
+    "index.html": "/MovieSeekerApp/index.html",
+    "main.2381cc7d.css.map": "/MovieSeekerApp/static/css/main.2381cc7d.css.map",
+    "main.ac3aa545.js.map": "/MovieSeekerApp/static/js/main.ac3aa545.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2381cc7d.css",
+    "static/js/main.ac3aa545.js"
+  ]
+}
